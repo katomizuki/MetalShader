@@ -9,18 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        MetalShaderView().ignoresSafeArea(.all)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+struct MetalShaderView: UIViewRepresentable {
+    typealias UIViewType = CustomMetalView
+    
+    func makeUIView(context: Context) -> CustomMetalView {
+        let mtkView = CustomMetalView(frame: .zero, device: MTLCreateSystemDefaultDevice()!)
+        return mtkView
+    }
+    
+    func updateUIView(_ uiView: CustomMetalView, context: Context) {
+    }
+    
+    func makeCoordinator() -> () {
+        
     }
 }
