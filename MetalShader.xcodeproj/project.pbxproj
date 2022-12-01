@@ -18,6 +18,7 @@
 		D3E69B7F2938183A00EF133A /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B7E2938183A00EF133A /* Renderer.swift */; };
 		D3E69B812938215500EF133A /* Vertex.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B802938215500EF133A /* Vertex.metal */; };
 		D3E69B832938222900EF133A /* MetalOne.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B822938222900EF133A /* MetalOne.metal */; };
+		D3E69B852938275600EF133A /* Util.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B842938275600EF133A /* Util.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		D3E69B7E2938183A00EF133A /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		D3E69B802938215500EF133A /* Vertex.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Vertex.metal; sourceTree = "<group>"; };
 		D3E69B822938222900EF133A /* MetalOne.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalOne.metal; sourceTree = "<group>"; };
+		D3E69B842938275600EF133A /* Util.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Util.metal; sourceTree = "<group>"; };
+		D3E69B86293827C200EF133A /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				D3E69B54293815BD00EF133A /* ContentView.swift */,
 				D3E69B7E2938183A00EF133A /* Renderer.swift */,
 				D3E69B7C293815F900EF133A /* CustomMetalView.swift */,
+				D3E69B842938275600EF133A /* Util.metal */,
+				D3E69B86293827C200EF133A /* Common.h */,
 				D3E69B802938215500EF133A /* Vertex.metal */,
 				D3E69B822938222900EF133A /* MetalOne.metal */,
 				D3E69B56293815BF00EF133A /* Assets.xcassets */,
@@ -275,6 +280,7 @@
 				D3E69B7D293815F900EF133A /* CustomMetalView.swift in Sources */,
 				D3E69B832938222900EF133A /* MetalOne.metal in Sources */,
 				D3E69B53293815BD00EF133A /* MetalShaderApp.swift in Sources */,
+				D3E69B852938275600EF133A /* Util.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
