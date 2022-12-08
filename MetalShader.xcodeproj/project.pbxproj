@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3BC92BB2941555600EBC37A /* two.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3BC92BA2941555600EBC37A /* two.metal */; };
 		D3E69B53293815BD00EF133A /* MetalShaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B52293815BD00EF133A /* MetalShaderApp.swift */; };
 		D3E69B55293815BD00EF133A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B54293815BD00EF133A /* ContentView.swift */; };
 		D3E69B57293815BF00EF133A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E69B56293815BF00EF133A /* Assets.xcassets */; };
@@ -17,7 +18,7 @@
 		D3E69B7D293815F900EF133A /* CustomMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B7C293815F900EF133A /* CustomMetalView.swift */; };
 		D3E69B7F2938183A00EF133A /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B7E2938183A00EF133A /* Renderer.swift */; };
 		D3E69B812938215500EF133A /* Vertex.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B802938215500EF133A /* Vertex.metal */; };
-		D3E69B832938222900EF133A /* MetalOne.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B822938222900EF133A /* MetalOne.metal */; };
+		D3E69B832938222900EF133A /* one.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B822938222900EF133A /* one.metal */; };
 		D3E69B852938275600EF133A /* Util.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3E69B842938275600EF133A /* Util.metal */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3BC92BA2941555600EBC37A /* two.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = two.metal; sourceTree = "<group>"; };
 		D3E69B4F293815BD00EF133A /* MetalShader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalShader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E69B52293815BD00EF133A /* MetalShaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalShaderApp.swift; sourceTree = "<group>"; };
 		D3E69B54293815BD00EF133A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +54,7 @@
 		D3E69B7C293815F900EF133A /* CustomMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMetalView.swift; sourceTree = "<group>"; };
 		D3E69B7E2938183A00EF133A /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		D3E69B802938215500EF133A /* Vertex.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Vertex.metal; sourceTree = "<group>"; };
-		D3E69B822938222900EF133A /* MetalOne.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalOne.metal; sourceTree = "<group>"; };
+		D3E69B822938222900EF133A /* one.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = one.metal; sourceTree = "<group>"; };
 		D3E69B842938275600EF133A /* Util.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Util.metal; sourceTree = "<group>"; };
 		D3E69B86293827C200EF133A /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,9 +112,10 @@
 				D3E69B7E2938183A00EF133A /* Renderer.swift */,
 				D3E69B7C293815F900EF133A /* CustomMetalView.swift */,
 				D3E69B842938275600EF133A /* Util.metal */,
+				D3BC92BA2941555600EBC37A /* two.metal */,
 				D3E69B86293827C200EF133A /* Common.h */,
 				D3E69B802938215500EF133A /* Vertex.metal */,
-				D3E69B822938222900EF133A /* MetalOne.metal */,
+				D3E69B822938222900EF133A /* one.metal */,
 				D3E69B56293815BF00EF133A /* Assets.xcassets */,
 				D3E69B58293815BF00EF133A /* Preview Content */,
 			);
@@ -278,7 +281,8 @@
 				D3E69B55293815BD00EF133A /* ContentView.swift in Sources */,
 				D3E69B812938215500EF133A /* Vertex.metal in Sources */,
 				D3E69B7D293815F900EF133A /* CustomMetalView.swift in Sources */,
-				D3E69B832938222900EF133A /* MetalOne.metal in Sources */,
+				D3BC92BB2941555600EBC37A /* two.metal in Sources */,
+				D3E69B832938222900EF133A /* one.metal in Sources */,
 				D3E69B53293815BD00EF133A /* MetalShaderApp.swift in Sources */,
 				D3E69B852938275600EF133A /* Util.metal in Sources */,
 			);

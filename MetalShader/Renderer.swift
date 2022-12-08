@@ -15,7 +15,7 @@ class Renderer {
     let device: MTLDevice = MTLCreateSystemDefaultDevice()!
     var library: MTLLibrary!
     lazy var vertexFunction: MTLFunction = library.makeFunction(name: "vertex_main")!
-    lazy var fragmentFunction: MTLFunction = library.makeFunction(name: "fragment_day1")!
+    lazy var fragmentFunction: MTLFunction = library.makeFunction(name: "twoMetal")!
     
     var resolutionBuffer: MTLBuffer!
     var timeBuffer: MTLBuffer!
@@ -61,6 +61,4 @@ class Renderer {
         let value = pointer.bindMemory(to: T.self, capacity: 1)
         value[0] = data
     }
-    
-    
 }

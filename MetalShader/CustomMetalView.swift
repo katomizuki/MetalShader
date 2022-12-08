@@ -65,7 +65,7 @@ extension CustomMetalView: MTKViewDelegate {
             return
         }
         renderer.updateTime(Float(Date().timeIntervalSince(startDate)))
-        renderer.updateVolume(volumeLevel)
+//        renderer.updateVolume(volumeLevel)
         renderer.updatetouchedPosition(x: Float(scaleFactor * touched.x), y: Float(scaleFactor * touched.y))
 
         renderEncoder.setRenderPipelineState(pipelineState)

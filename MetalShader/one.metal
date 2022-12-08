@@ -9,7 +9,7 @@
 #include "Common.h"
 using namespace metal;
 
-fragment float4 fragment_day1(float4 pixPos [[position]],
+fragment float4 oneMetal(float4 pixPos [[position]],
                               constant float2& res [[buffer(0)]],
                               constant float& time[[buffer(1)]]) {
     float2 uv = (2.0 * pixPos.xy - res) / min(res.x, res.y);
