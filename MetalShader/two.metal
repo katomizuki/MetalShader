@@ -42,16 +42,14 @@ fragment float4 twoMetal(float4 pixPos [[position]],
     float t2 = 0.2 * sin(5 * radian);
     t2 += 0.8;// -0.6 ~ 0.6の間くらい。
     
-    // uvのベクトルの大きさ
+    // uvのベクトルの大きさ　uvはすでに正規化されており、真ん中が原点になっている。
     float len = length(uv);
     // 0大きければ描画しない。lenを閾値としてlenより小さければ0を返す。それ以外は1
     float star = step(len, t2); // 0 ~ 1
-    
-    float4 color = float4(1.0, 1.0, 1.0, 1.0);
+
+    // 黄色
     float4 yellow = float4(1.0, 1.0, 0.0, 1.0);
-    // これらを線形補間。
-    float4 yellowy = mix(color,
-                         yellow, 1);
-// starを閾値としてmix(線形補間する)する。 => x(1 -a) + y * a
-    return mix(0, yellowy, star);
+
+// starを閾値としてmix(線形補間する)する。 => x(1 -a) + y * a HLSLだとLerｐになるでい
+    return mix(0, yellow, star);
 }
