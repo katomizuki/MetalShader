@@ -15,7 +15,7 @@ class Renderer {
     let device: MTLDevice = MTLCreateSystemDefaultDevice()!
     var library: MTLLibrary!
     lazy var vertexFunction: MTLFunction = library.makeFunction(name: "vertex_main")!
-    lazy var fragmentFunction: MTLFunction = library.makeFunction(name: "twoMetal")!
+    lazy var fragmentFunction: MTLFunction = library.makeFunction(name: "threeShader")!
     
     var resolutionBuffer: MTLBuffer!
     var timeBuffer: MTLBuffer!
